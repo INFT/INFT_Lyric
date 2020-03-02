@@ -28,6 +28,17 @@ body{
 	background-color: #9AD3D5;
 }
 </style>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Header</title>
+
+<link rel="stylesheet" href="demo.css">
+<link rel="stylesheet" href="header.css">
+<link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+
+
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
@@ -44,6 +55,31 @@ body{
 		</script>
 	</head>
 	<body>
+	<header class="header-user-dropdown">
+
+		<div class="header-limiter">
+			<h1><a href="#">INFT<span>lyrics</span></a></h1>
+	
+			<nav>
+				<a href="#">Beranda</a>
+				<a href="#">New Release</a>
+				<a href="#">List Album</a>
+				<a href="#">About Us</a>
+			</nav>
+	
+	
+			<div class="header-user-menu">
+				<img src="logo.png" alt="User Image"/>
+	
+				<ul>
+					<li><a href="#">Settings</a></li>
+					<li><a href="#" class="highlight">Logout</a></li>
+				</ul>
+			</div>
+	
+		</div>
+	
+	</header>
 		<div class="reveal">
 			<div class="slides">
                 <h1>About Us</h1>
@@ -133,6 +169,33 @@ body{
 
 			</div>
 		</div>
+		<script>
+
+			$(document).ready(function(){
+		
+				var userMenu = $('.header-user-dropdown .header-user-menu');
+		
+				userMenu.on('touchend', function(e){
+		
+					userMenu.addClass('show');
+		
+					e.preventDefault();
+					e.stopPropagation();
+		
+				});
+		
+				// This code makes the user dropdown work on mobile devices
+		
+				$(document).on('touchend', function(e){
+		
+					// If the page is touched anywhere outside the user menu, close it
+					userMenu.removeClass('show');
+		
+				});
+		
+			});
+		
+		</script>
 	</body>
 </html>
 
