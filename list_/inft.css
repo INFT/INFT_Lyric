@@ -44,3 +44,27 @@ h1{
     font-family: 'Ink Free';
     text-align: center;
 }
+.header-user-dropdown {
+	background-color:#fff5b0;
+	box-shadow:0 1px 1px #ccc;
+	padding: 20px 40px;
+	height: 80px;
+	color: #ffffff;
+	box-sizing: border-box;
+}
+
+.header-user-dropdown .header-limiter {
+	max-width: 1200px;
+	text-align: center;
+	margin: 0 auto;
+}
+.header-user-dropdown .header-limiter h1{
+	float: left;
+	font: normal 28px Cookie, Arial, Helvetica, sans-serif;
+	line-height: 40px;
+	margin:0;
+}
+
+.header-user-dropdown .header-limiter h1 span {
+	color: #9ad3d5;
+}
