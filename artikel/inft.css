@@ -1,0 +1,41 @@
+img#logo{
+    width: 145px;
+    height: 55px;
+}
+.logo{
+    position: absolute;
+    top: 35px;
+    float: left;
+}
+body{
+    background-color: #9ad3d5;
+    margin: 0;
+}
+ul li{
+    list-style-type: none;
+    margin-top: -30px;
+    display: inline-block;
+}
+.latarberanda{
+    background: #fff5b0;
+    background-size: cover; 
+    padding: 33px;
+    text-align: center
+}
+.kategori:hover{
+    background-color:#19af96;
+    border: 2px solid #19af96;
+}
+body{
+    font-family: 'Handwriting';
+}
+footer{
+    padding-bottom:15px;
+    padding-top:15px;
+    background-color: #fff5b0;
+    text-align: center;
+    color: black;
+    font-weight: 300;
+    list-style-type: none;
+    margin-bottom: -300px;
+}
