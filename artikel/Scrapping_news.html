@@ -7,7 +7,7 @@
         $.getJSON('news.json',function(datacek){
             var berita = '';
             var i = 1;
-            berita += "<table border='1'><tr><td>No</td><td>Kategori</td><td>Judul Artikel</td><td>Waktu</td></tr>"
+            berita += "<table border='1'><tr><td>No</td><td>Kategori</td><td>Judul Artikel</td><td>Tanggal</td><td>Waktu</td></tr>"
             $.each(datacek, function(key, value) {
                 berita += '<tr>';
                 berita += '<td>'+i+'</td>'
