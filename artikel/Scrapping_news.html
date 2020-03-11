@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script>
+     $(document).ready(function(){
+        $.getJSON('news.json',function(datacek){
+            var berita = '';
+            var i = 1;
+            berita += "<table border='1'><tr><td>No</td><td>Kategori</td><td>Judul Artikel</td><td>Tanggal</td><td>Waktu Publish</td></tr>"
+            $.each(datacek, function(key, value) {
+                berita += '<tr>';
+                berita += '<td>'+i+'</td>'
+                berita += '<td>'+value.kategori+'</td>'
+                berita += '<td>'+value.tittle+'</td>'
+                berita += '<td>'+value.tgl+'</td>'
+                berita += '<td>'+value.waktu+'</td>'
+                berita += '</tr>';
+                i = i + 1;
+            });
+            $('#republikanews').append(berita);
+        });
+    });
+</script>
+<body>
+    <h1>Putri   191524054</h1>
+    <div id="republikanews"></div>
+</body>
+</html>
