@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script>
+     $(document).ready(function(){
+        $.getJSON('HeadLineTaa.json', function(cek){
+            var berita = '';
+            var i = 1;
+            berita += "<table border='1'><tr><td>No</td><td>Kategori</td><td>Judul Artikel</td><td>Tanggal</td><td>Waktu</td></tr>"
+            $.each(cek, function(key, value){
+                berita += '<tr>';
+                berita += '<td>'+i+'</td>';
+                berita += '<td>'+value.kateori+'</td>'
+                berita += '<td>'+value.judul+'</td>'
+                berita += '<td>'+value.tanggal+'</td>'
+                berita += '<td>'+value.waktu+'</td>'
+                berita += '</tr>';
+                i = i + 1;
+            });
+            $('#Republika').append(berita);
+        });
+    });
+</script>
+<body>
+    <h1>Shinta 191524061</h1>
+    <div id = "Republika"></div>
+</body>
+</html>
