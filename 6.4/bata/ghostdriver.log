@@ -1,0 +1,52 @@
+[INFO  - 2020-03-18T10:45:23.682Z] GhostDriver - Main - running on port 61355
+[INFO  - 2020-03-18T10:45:28.241Z] Session [94ea7dd0-6905-11ea-ae8c-7baa0f5dd024] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2020-03-18T10:45:28.241Z] Session [94ea7dd0-6905-11ea-ae8c-7baa0f5dd024] - page.customHeaders:  - {}
+[INFO  - 2020-03-18T10:45:28.241Z] Session [94ea7dd0-6905-11ea-ae8c-7baa0f5dd024] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2020-03-18T10:45:28.241Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 94ea7dd0-6905-11ea-ae8c-7baa0f5dd024
+[ERROR - 2020-03-18T10:45:32.206Z] Session [94ea7dd0-6905-11ea-ae8c-7baa0f5dd024] - page.onError - msg: TypeError: undefined is not a constructor (evaluating 'url.includes(protocol)')
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2020-03-18T10:45:32.207Z] Session [94ea7dd0-6905-11ea-ae8c-7baa0f5dd024] - page.onError - stack:
+  correctUrlProtocol (https://www.bata.id/static/version1556191326/frontend/W3N/default/en_US/Mageplaza_SocialLogin/js/popup.min.js:3)
+  (anonymous function) (https://www.bata.id/static/version1556191326/frontend/W3N/default/en_US/jquery/jquery-ui.min.js:27)
+  initLink (https://www.bata.id/static/version1556191326/frontend/W3N/default/en_US/Mageplaza_SocialLogin/js/popup.min.js:3)
+  (anonymous function) (https://www.bata.id/static/version1556191326/frontend/W3N/default/en_US/jquery/jquery-ui.min.js:27)
+  _create (https://www.bata.id/static/version1556191326/frontend/W3N/default/en_US/Mageplaza_SocialLogin/js/popup.min.js:1)
+  (anonymous function) (https://www.bata.id/static/version1556191326/frontend/W3N/default/en_US/jquery/jquery-ui.min.js:27)
+  _createWidget (https://www.bata.id/static/version1556191326/frontend/W3N/default/en_US/jquery/jquery-ui.min.js:33)
+  (anonymous function) (https://www.bata.id/static/version1556191326/frontend/W3N/default/en_US/jquery/jquery-ui.min.js:26)
+  (anonymous function) (https://www.bata.id/static/version1556191326/frontend/W3N/default/en_US/jquery/jquery-ui.min.js:25)
+  (anonymous function) (https://www.bata.id/static/version1556191326/frontend/W3N/default/en_US/mage/apply/main.min.js:2)
+  execCb (https://www.bata.id/static/version1556191326/_cache/merged/056953d85c6e6e22034c043763e87290.min.js:112)
+  check (https://www.bata.id/static/version1556191326/_cache/merged/056953d85c6e6e22034c043763e87290.min.js:56)
+  (anonymous function) (https://www.bata.id/static/version1556191326/_cache/merged/056953d85c6e6e22034c043763e87290.min.js:72)
+  (anonymous function) (https://www.bata.id/static/version1556191326/_cache/merged/056953d85c6e6e22034c043763e87290.min.js:11)
+  (anonymous function) (https://www.bata.id/static/version1556191326/_cache/merged/056953d85c6e6e22034c043763e87290.min.js:74)
+  each (https://www.bata.id/static/version1556191326/_cache/merged/056953d85c6e6e22034c043763e87290.min.js:3)
+  emit (https://www.bata.id/static/version1556191326/_cache/merged/056953d85c6e6e22034c043763e87290.min.js:74)
+  check (https://www.bata.id/static/version1556191326/_cache/merged/056953d85c6e6e22034c043763e87290.min.js:61)
+  (anonymous function) (https://www.bata.id/static/version1556191326/_cache/merged/056953d85c6e6e22034c043763e87290.min.js:72)
+  (anonymous function) (https://www.bata.id/static/version1556191326/_cache/merged/056953d85c6e6e22034c043763e87290.min.js:11)
+  (anonymous function) (https://www.bata.id/static/version1556191326/_cache/merged/056953d85c6e6e22034c043763e87290.min.js:74)
+  each (https://www.bata.id/static/version1556191326/_cache/merged/056953d85c6e6e22034c043763e87290.min.js:3)
+  emit (https://www.bata.id/static/version1556191326/_cache/merged/056953d85c6e6e22034c043763e87290.min.js:74)
+  check (https://www.bata.id/static/version1556191326/_cache/merged/056953d85c6e6e22034c043763e87290.min.js:61)
+  (anonymous function) (https://www.bata.id/static/version1556191326/_cache/merged/056953d85c6e6e22034c043763e87290.min.js:72)
+  (anonymous function) (https://www.bata.id/static/version1556191326/_cache/merged/056953d85c6e6e22034c043763e87290.min.js:11)
+  (anonymous function) (https://www.bata.id/static/version1556191326/_cache/merged/056953d85c6e6e22034c043763e87290.min.js:74)
+  each (https://www.bata.id/static/version1556191326/_cache/merged/056953d85c6e6e22034c043763e87290.min.js:3)
+  emit (https://www.bata.id/static/version1556191326/_cache/merged/056953d85c6e6e22034c043763e87290.min.js:74)
+  check (https://www.bata.id/static/version1556191326/_cache/merged/056953d85c6e6e22034c043763e87290.min.js:61)
+  (anonymous function) (https://www.bata.id/static/version1556191326/_cache/merged/056953d85c6e6e22034c043763e87290.min.js:72)
+  (anonymous function) (https://www.bata.id/static/version1556191326/_cache/merged/056953d85c6e6e22034c043763e87290.min.js:11)
+  (anonymous function) (https://www.bata.id/static/version1556191326/_cache/merged/056953d85c6e6e22034c043763e87290.min.js:74)
+  each (https://www.bata.id/static/version1556191326/_cache/merged/056953d85c6e6e22034c043763e87290.min.js:3)
+  emit (https://www.bata.id/static/version1556191326/_cache/merged/056953d85c6e6e22034c043763e87290.min.js:74)
+  check (https://www.bata.id/static/version1556191326/_cache/merged/056953d85c6e6e22034c043763e87290.min.js:61)
+  enable (https://www.bata.id/static/version1556191326/_cache/merged/056953d85c6e6e22034c043763e87290.min.js:73)
+  init (https://www.bata.id/static/version1556191326/_cache/merged/056953d85c6e6e22034c043763e87290.min.js:54)
+  callGetModule (https://www.bata.id/static/version1556191326/_cache/merged/056953d85c6e6e22034c043763e87290.min.js:74)
+  completeLoad (https://www.bata.id/static/version1556191326/_cache/merged/056953d85c6e6e22034c043763e87290.min.js:103)
+  onScriptLoad (https://www.bata.id/static/version1556191326/_cache/merged/056953d85c6e6e22034c043763e87290.min.js:112)
+
+  phantomjs://platform/console++.js:263 in error

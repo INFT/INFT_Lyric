@@ -121,3 +121,19 @@ footer{
     list-style-type: none;
     margin-bottom: -300px;
 }
+.update{
+    
+    font-size: 50px;
+
+    background-color:  #fff5b0;
+    border: 15px solid #9ad3d5;
+    font-family: 'Franklin Gothic Medium';
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+
+  }
+  .updates{
+      text-align: center;
+      font-size: 100px;
+  }
