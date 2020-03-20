@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script>
+     $(document).ready(function(){
+        $.getJSON('headline.json', function(cek){
+            var databerita = '';
+            var i = 1;
+            databerita += "<table border='1'><tr><td>No</td><td>Kategori</td><td>Judul Artikel</td><td>Tanggal</td><td>Waktu</td></tr>"
+            $.each(cek, function(key, value){
+                databerita += '<tr>';
+                databerita += '<td>'+i+'</td>';
+                databerita += '<td>'+value.category+'</td>'
+                databerita += '<td>'+value.tittle+'</td>'
+                databerita += '<td>'+value.date+'</td>'
+                databerita += '<td>'+value.time+'</td>'
+                databerita += '</tr>';
+                i = i + 1;
+            });
+            $('#republika').append(databerita);
+        });
+    });
+</script>
+<body>
+    <h1>Meta 191524048</h1>
+    <div id = "republika"></div>
+</body>
+</html>
